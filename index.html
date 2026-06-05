@@ -1,13 +1,252 @@
-HTML
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehei CHAN | Portfolio Administrateur Infra & SecOPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Configuration de la barre de navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Tehei<span>.CHAN</span></a>
+            <nav class="nav-links">
+                <a href="#about">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#projects">Projets & Labs</a>
+                <a href="#education">Parcours</a>
+                <a href="#contact" class="btn-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Section Hero (Accueil) -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Recherche d'Alternance / Stage</span>
+                <h1>Administrateur <span class="text-gradient">Infrastructure & SecOPS</span></h1>
+                <p>Étudiant passionné à l'IPSSI, spécialisé dans la sécurisation des architectures systèmes et réseaux, l'automatisation et le Cloud. Actuellement à la recherche d'une opportunité pour mettre mes compétences en pratique et valider mon année.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-filled">Voir mes Projets</a>
+                    <a href="#contact" class="btn btn-outline">Me Contacter</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tehei-chan-pro" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Tehei-CHAN" target="_blank" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-box">
+                    <div class="terminal-header">
+                        <span class="circle red"></span>
+                        <span class="circle yellow"></span>
+                        <span class="circle green"></span>
+                        <span class="terminal-title">tehei@secops-core:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="cmd"><span class="prompt">guest@portfolio:~$</span> cat profile.json</p>
+                        <pre class="output">{
+  "nom": "Tehei CHAN",
+  "poste": "SecOPS & Infra Student",
+  "ecole": "IPSSI Paris",
+  "statut": "À la recherche d'une alternance",
+  "disponibilite": "Immédiate",
+  "skills": ["Linux", "Hardening", "Network", "CI/CD"]
+}</pre>
+                        <p class="cmd"><span class="prompt">guest@portfolio:~$</span> <span class="blink">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
-    Portfolio de Tehei CHAN
+    <!-- Section À propos -->
+    <section id="about" class="about-section section">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Issu d'une formation solide axée sur la gestion des infrastructures réseaux et systèmes (BTS SIO SISR au lycée La Mennais), j'ai choisi de me spécialiser en intégrant le <strong>Bachelor Administrateur Infrastructure & SecOPS à l'IPSSI</strong>.</p>
+                    <p>Ma vision du métier repose sur la convergence entre une infrastructure robuste et une sécurité sans compromis. J'adore concevoir des architectures, automatiser des tâches répétitives et mettre en œuvre des politiques de durcissement (hardening) pour minimiser les surfaces d'attaque.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <h3>BTS SIO SISR</h3>
+                        <p>Lycée La Mennais — Fondations systèmes, routage, commutation et services réseaux.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Bachelor SecOPS</h3>
+                        <p>IPSSI — Spécialisation en sécurité opérationnelle, supervision (SIEM), conteneurisation et cloud.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Section Compétences -->
+    <section id="skills" class="skills-section section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Compétences Techniques</h2>
+            <div class="skills-grid">
+                <!-- Bloc Systèmes -->
+                <div class="skill-category">
+                    <div class="category-icon">🛠️</div>
+                    <h3>Systèmes & Virtualisation</h3>
+                    <ul class="skill-list">
+                        <li>Linux (Debian, Ubuntu Server) & Hardening</li>
+                        <li>Windows Server, Active Directory, GPO</li>
+                        <li>Hyperviseurs : VMware ESXi, Proxmox VE</li>
+                    </ul>
+                </div>
+                <!-- Bloc Réseaux -->
+                <div class="skill-category">
+                    <div class="category-icon">🌐</div>
+                    <h3>Réseaux & Sécurité</h3>
+                    <ul class="skill-list">
+                        <li>Routage & Commutation (Cisco CCNA)</li>
+                        <li>Pare-feu & UTM : pfSense, Stormshield, Fortinet</li>
+                        <li>VPN (OpenVPN, WireGuard), Architecture DMZ</li>
+                    </ul>
+                </div>
+                <!-- Bloc SecOPS / DevOps -->
+                <div class="skill-category">
+                    <div class="category-icon">🛡️</div>
+                    <h3>SecOPS & DevOps</h3>
+                    <ul class="skill-list">
+                        <li>Supervision & Log management : Wazuh, ELK Stack</li>
+                        <li>Conteneurisation : Docker & Docker Compose</li>
+                        <li>Automatisation : Scripting Bash, Ansible (Notions)</li>
+                        <li>Versionning : Git / GitHub GitOps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
-Bonjour, je suis Tehei CHAN !
+    <!-- Section Projets & Réalisations -->
+    <section id="projects" class="projects-section section">
+        <div class="container">
+            <h2 class="section-title">Projets & Travaux Pratiques</h2>
+            <p class="section-subtitle">Voici un aperçu des infrastructures et maquettes de sécurité que j'ai pu déployer en cours ou en laboratoire personnel.</p>
+            
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Sécurité & Système</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Déploiement d'une architecture Active Directory sécurisée</h3>
+                        <p>Mise en place d'un domaine d'entreprise sous Windows Server avec application de GPO strictes basées sur les recommandations de l'ANSSI (durcissement, restriction des privilèges, stratégies de mots de passe).</p>
+                        <div class="tech-pills">
+                            <span>Windows Server</span>
+                            <span>GPO</span>
+                            <span>ANSSI</span>
+                        </div>
+                    </div>
+                </div>
 
-    
-Étudiant en Bachelor Infra & SecOPS à l'IPSSI.
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Réseau & Sécurité</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Interconnexion de sites & Filtrage par Pare-feu</h3>
+                        <p>Maquettage complet d'une infrastructure multi-sites avec un routeur/pare-feu pfSense. Configuration de tunnels VPN IPSec/WireGuard sécurisés, mise en place d'une DMZ pour les serveurs Web et règles de filtrage de flux.</p>
+                        <div class="tech-pills">
+                            <span>pfSense</span>
+                            <span>VPN IPSec</span>
+                            <span>DMZ</span>
+                            <span>Routing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">SecOPS</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Mise en place d'un SIEM avec centralisation des logs</h3>
+                        <p>Déploiement d'une solution de supervision de sécurité (Wazuh / Stack ELK) pour collecter, analyser et générer des alertes en temps réel face à des comportements suspects ou des tentatives d'intrusion sur des serveurs Linux.</p>
+                        <div class="tech-pills">
+                            <span>Wazuh</span>
+                            <span>ELK</span>
+                            <span>Linux</span>
+                            <span>SIEM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Éducation -->
+    <section id="education" class="education-section section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Parcours Académique</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">En cours (2025 - 2026)</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor Administrateur Infrastructure & SecOPS</h3>
+                        <p class="institution">IPSSI</p>
+                        <p>Approfondissement des concepts DevOps, automatisation des infrastructures, audits de sécurité, conformité réglementaire et gestion des incidents.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>BTS SIO (Option SISR)</h3>
+                        <p class="institution">Collège Lycée La Mennais</p>
+                        <p>Solutions d'Infrastructure, Systèmes et Réseaux. Apprentissage du déploiement de services réseaux, de la configuration d'équipements actifs et du support utilisateur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            <p class="section-subtitle">Intéressé par mon profil pour une alternance ou un stage ? Discutons de la manière dont je peux contribuer à la gestion et à la sécurité de votre infrastructure informatique.</p>
+            
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h3>Coordonnées</h3>
+                    <p>📧 Email : <a href="mailto:votre.email@exemple.com">Votre Adresse Email Pro (à remplacer)</a></p>
+                    <p>📍 Localisation : France (Prêt à bouger / Télétravail)</p>
+                    <p>💼 Statut : Disponible pour entretiens</p>
+                </div>
+                <div class="contact-cta">
+                    <a href="https://www.linkedin.com/in/tehei-chan-pro" target="_blank" class="btn btn-filled btn-large">Me contacter sur LinkedIn</a>
+                    <a href="https://github.com/Tehei-CHAN" target="_blank" class="btn btn-outline btn-large">Explorer mon GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Tehei CHAN. Tous droits réservés.</p>
+            <p>Propulsé par GitHub Pages</p>
+        </div>
+    </footer>
+
+</body>
+</html>
